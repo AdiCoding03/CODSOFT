@@ -27,7 +27,8 @@ while(1):
     elif(o=="%"):
         a=int(input("Enter the 1st number: "))
         b=int(input("Enter the 2nd number: "))
-        r=a%b
+        s=a/100
+        r=s*b
     else:
         print("Invalid Operation\n")
         continue
