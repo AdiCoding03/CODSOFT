@@ -3,7 +3,7 @@ print("Enter + for Addition")
 print("Enter - for Subtraction")
 print("Enter x for Multiplication")
 print("Enter / for Division")
-print("Enter % for Percentage\n")
+print("Enter % for P\n")
 
 while(1):
     o=input("Enter the arithmetic operation: ")
@@ -25,7 +25,8 @@ while(1):
         b=int(input("Enter the 2nd number: "))
         r=a/b
     elif(o=="%"):
-        a=int(input("Enter the number: "))
+        a=int(input("Enter the 1st number: "))
+        b=int(input("Enter the 2nd number: "))
         r=a%b
     else:
         print("Invalid Operation\n")
