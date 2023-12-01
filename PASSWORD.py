@@ -9,18 +9,18 @@ up=['A','B','C','D','E','F','G','H','I','J','K','M','N','O','P','Q','R','S','T',
 symbol=['!','@','#','$','%','=',':','?','.','/','|','~','>','<','(',')']
 
 while(1):
-    print("1.Create password using your name\n2.Create a random strong password\n3.Check the strength of any password\n4.Exit\n")
+    print("\n1.Create password using your name\n2.Create a random strong password\n3.Check the strength of any password\n4.Exit\n")
     ch=int(input("Enter your choice: "))
     if ch == 1:
         name=input("Enter your full name without space: ")
-        len=int(input("\nEnter the length of the password: "))
+        length=int(input("\nEnter the length of the password: "))
         split_ch = []
         for i in name:
             split_ch.append(i)
         n_total=dig+symbol
         n_str="".join(split_ch[0:3])
         n_pass=""
-        for x in range(len-3):
+        for x in range(length-3):
             n_pass=n_pass+random.choice(n_total)
         n_password="".join(split_ch[0:3])
         for x in n_pass:
@@ -28,7 +28,7 @@ while(1):
         print("The password is: ",n_password)
 
     elif ch == 2:
-        len=int(input("\nEnter the length of the password: "))
+        length=int(input("\nEnter the length of the password: "))
         total=dig+low+up+symbol
         r_dig=random.choice(dig)
         r_up=random.choice(up)
