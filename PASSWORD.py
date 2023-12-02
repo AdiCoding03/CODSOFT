@@ -36,7 +36,7 @@ while(1):
         r_symbol=random.choice(symbol)
         temp_pass=r_dig+r_up+r_low+r_symbol
 
-        for x in range(len-4):
+        for x in range(length-4):
             temp_pass=temp_pass+random.choice(total)
         password=""
         for x in temp_pass:
